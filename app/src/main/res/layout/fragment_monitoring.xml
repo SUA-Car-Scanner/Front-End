@@ -1,28 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="실시간 모니터링"
         android:textSize="25sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"/>
+        android:layout_marginBottom="15dp"/>
+    <View
+        android:id="@+id/test1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/cirlcle"
+        android:backgroundTint="@color/green"
+        android:textStyle="bold"
+        />
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <View
+            android:id="@+id/test2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/asdf"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+        <View
+            android:id="@+id/test3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/test4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/test5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <View
+            android:id="@+id/test6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/test6_no_pulse"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+
+
+    </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/currentInfo"
         android:orientation="horizontal"
-        android:layout_below="@id/titleTextView"
         android:gravity="center_horizontal"
         android:layout_marginTop="10dp"
 
@@ -63,7 +156,6 @@
             android:id="@+id/currentSpeed"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/titleTextView"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:background="@drawable/rounded_background"
@@ -100,8 +192,7 @@
         android:id="@+id/graphView"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_below="@id/currentInfo"
         android:gravity="center"
         />
 
-</RelativeLayout>
+</LinearLayout>

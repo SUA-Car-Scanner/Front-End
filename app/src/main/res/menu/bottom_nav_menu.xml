@@ -15,9 +15,5 @@
         android:id="@+id/navigation_driving"
         android:icon="@drawable/ic_nav_driving"
         android:title="운전 기록" />
-    <item
-        android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_nav_settings"
-        android:title="환경 설정" />
 </menu>
 

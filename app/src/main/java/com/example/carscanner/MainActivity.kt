@@ -40,10 +40,13 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(drivingFragment)
                     true
                 }
+                /*
                 R.id.navigation_settings -> {
                     loadFragment(settingsFragment)
                     true
                 }
+                */
+
                 else -> false
             }
         }

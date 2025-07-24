@@ -36,7 +36,6 @@
                 android:background="@drawable/cirlcle"
                 android:backgroundTint="@color/orange"
                 android:textStyle="bold"
-
                 />
 
             <TextView

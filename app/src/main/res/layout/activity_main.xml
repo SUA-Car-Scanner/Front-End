@@ -5,19 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:clipChildren="false">
+    android:clipChildren="false"
+
+    >
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        app:liftOnScroll="false">
         
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarView"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways"
-            android:background="@android:color/transparent"/>
+            android:elevation="0dp"
+            android:background="@color/white"
+            android:title=""/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView

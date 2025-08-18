@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -23,16 +24,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //FirebaseApp.initializeApp(this)
-        supportActionBar?.hide()
+        //supportActionBar?.hide()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val toolbarView = findViewById<Toolbar>(R.id.toolbarView)
         setSupportActionBar(toolbarView)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayUseLogoEnabled(false)
 
         val toolbarViewLayoutParams= toolbarView.layoutParams as AppBarLayout.LayoutParams
         toolbarViewLayoutParams.scrollFlags =
             AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
         toolbarView.layoutParams = toolbarViewLayoutParams
+        ViewCompat.setElevation(toolbarView, 0f)
 
 
         loadFragment(monitoringFragment) // 기본 페이지 설정(실시간 모니터링 페이지)

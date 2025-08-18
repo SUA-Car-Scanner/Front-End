@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     >
-
+ <!--타이틀 한 번 없애봄
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginBottom="15dp"/>
+        -->
     <View
         android:id="@+id/test1"
         android:layout_width="100dp"

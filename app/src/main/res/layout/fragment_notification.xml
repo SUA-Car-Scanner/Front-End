@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- 고정된 이미지 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="16dp">
+    <!--타이틀 한 번 없애봄
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:padding="16dp">
 
-        <!-- 이미지 아이콘 (반복되지 않음) -->
+
         <ImageView
             android:id="@+id/ic_back"
             android:layout_width="20dp"
@@ -22,7 +22,7 @@
             android:src="@drawable/ic_back"
             android:layout_marginEnd="8dp"/>
 
-        <!-- 이미지 옆에 고정된 텍스트 -->
+
         <TextView
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
@@ -32,6 +32,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"/>
     </LinearLayout>
+-->
 
     <!-- RecyclerView (날짜 구분선이랑.... 알림 목록....) -->
     <androidx.recyclerview.widget.RecyclerView

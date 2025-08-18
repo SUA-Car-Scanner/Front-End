@@ -38,7 +38,7 @@ class NotificationFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
-        val backButton = view.findViewById<ImageView>(R.id.ic_back)
+        //val backButton = view.findViewById<ImageView>(R.id.ic_back)
 /*
         val db = FirebaseFirestore.getInstance()
 

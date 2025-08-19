@@ -13,7 +13,6 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:elevation="0dp"
         android:stateListAnimator="@null"
         app:liftOnScroll="false">

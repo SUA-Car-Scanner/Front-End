@@ -44,7 +44,16 @@
                 android:layout_height="wrap_content">
 
                 <View
-                    android:id="@+id/pulseTimer"
+                    android:id="@+id/pulseTimer1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/cirlcle"
+                    android:backgroundTint="@color/red"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:id="@+id/pulseTimer2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="20dp"

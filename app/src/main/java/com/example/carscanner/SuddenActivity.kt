@@ -37,9 +37,12 @@ class SuddenActivity : AppCompatActivity() {
             finish()
         }*/
         val aiSpeechTimerView: View = findViewById<View>(R.id.aiSpeechTimer)
-        val pulseTimerView: View = findViewById<View>(R.id.pulseTimer)
-        val pulse = AnimationUtils.loadAnimation(this, R.anim.pulse3)
-        pulseTimerView.startAnimation(pulse)
+        val pulseTimer1View: View = findViewById<View>(R.id.pulseTimer1)
+        val pulseTimer2View: View = findViewById<View>(R.id.pulseTimer2)
+        val pulse2 = AnimationUtils.loadAnimation(this, R.anim.pulse2)
+        val pulse3 = AnimationUtils.loadAnimation(this, R.anim.pulse3)
+        pulseTimer1View.startAnimation(pulse2)
+        pulseTimer2View.startAnimation(pulse3)
         val blinkBorderView: View = findViewById(R.id.blinkBorder)
         Anim.blink(blinkBorderView, ContextCompat.getColor(this, R.color.red), ContextCompat.getColor(this, R.color.black), 1000L)
 

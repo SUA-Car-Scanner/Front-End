@@ -18,15 +18,6 @@
         android:textStyle="bold"
         android:layout_marginBottom="15dp"/>
         -->
-    <View
-        android:id="@+id/test1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="30dp"
-        android:background="@drawable/cirlcle"
-        android:backgroundTint="@color/green"
-        android:textStyle="bold"
-        />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -34,84 +25,43 @@
         android:layout_margin="30dp">
 
         <View
-            android:id="@+id/test2"
+            android:id="@+id/aiSpeechPulse2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:layout_margin="30dp"
             android:background="@drawable/cirlcle"
             android:backgroundTint="@color/green"
             android:textStyle="bold"
             />
         <View
-            android:id="@+id/asdf"
+            android:id="@+id/aiSpeechPulse1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:layout_margin="30dp"
             android:background="@drawable/cirlcle"
             android:backgroundTint="@color/green"
             android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/aiSpeech"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/cirlcle"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:text="break"
             />
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp">
-        <View
-            android:id="@+id/test3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <View
-            android:id="@+id/test4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <View
-            android:id="@+id/test5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp">
-
-        <View
-            android:id="@+id/test6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <View
-            android:id="@+id/test6_no_pulse"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-
-
-    </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

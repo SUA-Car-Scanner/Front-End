@@ -41,23 +41,13 @@ class MonitoringFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_monitoring, container, false)
-        val test1: View = root.findViewById(R.id.test1)
-        val test2: View = root.findViewById(R.id.test2)
-        val test3: View = root.findViewById(R.id.test3)
-        val test4: View = root.findViewById(R.id.test4)
-        val test5: View = root.findViewById(R.id.test5)
-        val test6: View = root.findViewById(R.id.test6)
-        val pulse1 = AnimationUtils.loadAnimation(requireContext(), R.anim.pulse)
+        val aiSpeechPulse1View: View = root.findViewById(R.id.aiSpeechPulse1)
+        val aiSpeechPulse2View: View = root.findViewById(R.id.aiSpeechPulse2)
         val pulse2 = AnimationUtils.loadAnimation(requireContext(), R.anim.pulse2)
         val pulse3 = AnimationUtils.loadAnimation(requireContext(), R.anim.pulse3)
-        val pulse4 = AnimationUtils.loadAnimation(requireContext(), R.anim.pulse4)
 
-        test1.startAnimation(pulse1)
-        test2.startAnimation(pulse1)
-        test3.startAnimation(pulse2)
-        test4.startAnimation(pulse3)
-        //test5.startAnimation(pulse4)
-        test6.startAnimation(pulse3)
+        aiSpeechPulse1View.startAnimation(pulse2)
+        aiSpeechPulse2View.startAnimation(pulse3)
         return root
     }
 

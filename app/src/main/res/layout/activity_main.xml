@@ -15,13 +15,13 @@
         android:layout_height="wrap_content"
         android:elevation="0dp"
         android:stateListAnimator="@null"
-        app:liftOnScroll="false">
+        app:liftOnScroll="false"
+        android:fitsSystemWindows="true">
         
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarView"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways"
             android:elevation="0dp"
             android:background="@color/white"
             android:title=""/>
@@ -32,8 +32,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:fillViewport="true"
-        android:layout_gravity="fill_vertical"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_gravity="fill_vertical">
 
         <FrameLayout
             android:id="@+id/fragment_container"

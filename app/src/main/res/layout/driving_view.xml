@@ -18,8 +18,6 @@
         android:padding="8dp"
         android:textColor="@color/black"/>
 
-    <!-- 상단 굵은 선 -->
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"

@@ -28,7 +28,7 @@ class SuddenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        //val cancelButton: Button = findViewById(R.id.cancelButton)
+        val endSuddenView: View = findViewById(R.id.endSudden)
         //countDownText = findViewById(R.id.countDownText)*
 
         /*cancelButton.setOnClickListener {
@@ -53,7 +53,7 @@ class SuddenActivity : AppCompatActivity() {
         object : CountDownTimer((seconds * 1000).toLong(), 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 val secondsLeft = millisUntilFinished / 1000
-                countDownText.text = "신고(${secondsLeft}s)"
+                countDownText.text = "신${secondsLeft}s)"
             }
 
             override fun onFinish() {

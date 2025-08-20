@@ -48,6 +48,9 @@ class MonitoringFragment : Fragment() {
 
         aiSpeechPulse1View.startAnimation(pulse2)
         aiSpeechPulse2View.startAnimation(pulse3)
+
+        val graphView : View = root.findViewById(R.id.graphView)
+        graphView.visibility = View.GONE
         return root
     }
 

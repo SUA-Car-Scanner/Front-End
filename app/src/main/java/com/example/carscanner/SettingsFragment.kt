@@ -23,13 +23,13 @@ class SettingsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragments_settings, container, false)
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
         phoneListContainer = view.findViewById(R.id.phoneListContainer)
         addPhoneNumber = view.findViewById(R.id.addPhoneNumber)
-        inputName = view.findViewById(R.id.inputName)
-        inputPhone = view.findViewById(R.id.inputPhone)
-        inputCar = view.findViewById(R.id.inputCar)
+        inputName = view.findViewById(R.id.userNameEdit)
+        inputPhone = view.findViewById(R.id.userPhoneEdit)
+        inputCar = view.findViewById(R.id.userCarEdit)
         editProfile = view.findViewById(R.id.editProfile)
 
         editProfile.setOnClickListener {

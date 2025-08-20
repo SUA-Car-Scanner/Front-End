@@ -26,8 +26,8 @@
 
         <View
             android:id="@+id/aiSpeechPulse2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_margin="30dp"
             android:background="@drawable/cirlcle"
             android:backgroundTint="@color/green"
@@ -35,8 +35,8 @@
             />
         <View
             android:id="@+id/aiSpeechPulse1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_margin="30dp"
             android:background="@drawable/cirlcle"
             android:backgroundTint="@color/green"
@@ -44,8 +44,8 @@
             />
         <View
             android:id="@+id/aiSpeech"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_margin="30dp"
             android:background="@drawable/cirlcle"
             android:backgroundTint="@color/green"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="@color/white"
-            android:textSize="36dp"
+            android:textSize="32dp"
             android:textStyle="bold"
             android:text="break"
             />

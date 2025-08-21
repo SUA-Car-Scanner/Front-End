@@ -110,6 +110,7 @@ class SuddenActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {
+                triggerCallOnce()
                 playInstructionTts()
             }
         }.start()
@@ -128,8 +129,7 @@ class SuddenActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun playInstructionTts() {
-        if (warningCount <= 0) {         // 0 이하이면 바로 전화
-            triggerCallOnce()
+        if (warningCount <= 0) {
             return
         }
         if (ttsReady) actuallySpeak() else speakPending = true

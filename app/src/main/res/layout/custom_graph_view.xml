@@ -9,7 +9,6 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:text="압력센서 &amp; 속력 비교"
-        android:padding="8dp"
         android:textColor="@color/black"/>
 
     <LinearLayout

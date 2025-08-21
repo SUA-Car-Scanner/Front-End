@@ -33,7 +33,8 @@
         </activity>
         <activity
             android:name=".SuddenActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:launchMode="singleTop"/>
         <activity android:name=".SuddenWarningActivity" />
 
     </application>

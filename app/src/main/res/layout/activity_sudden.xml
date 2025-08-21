@@ -96,6 +96,7 @@
         </LinearLayout>
 
         <ImageButton
+            android:id="@+id/callButton"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/ic_call"

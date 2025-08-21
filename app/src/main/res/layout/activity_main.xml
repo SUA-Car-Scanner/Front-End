@@ -32,13 +32,15 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:fillViewport="true"
-        android:layout_gravity="fill_vertical">
+        android:layout_gravity="fill_vertical"
+        android:padding="10dp">
 
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="70dp" />
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"/>
     </androidx.core.widget.NestedScrollView>
 
     <!-- 하단 네비게이션 바 -->

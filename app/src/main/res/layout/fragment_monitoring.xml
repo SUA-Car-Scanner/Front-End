@@ -19,52 +19,68 @@
         android:layout_marginBottom="15dp"/>
         -->
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp">
-
-        <View
-            android:id="@+id/aiSpeechPulse2"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <View
-            android:id="@+id/aiSpeechPulse1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <View
-            android:id="@+id/aiSpeech"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/cirlcle"
-            android:backgroundTint="@color/green"
-            android:textStyle="bold"
-            />
-        <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textSize="32dp"
-            android:textStyle="bold"
-            android:text="break"
-            />
-    </FrameLayout>
+            android:layout_margin="30dp">
+
+            <View
+                android:id="@+id/aiSpeechPulse2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/cirlcle"
+                android:backgroundTint="@color/green"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/aiSpeechPulse1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/cirlcle"
+                android:backgroundTint="@color/green"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/aiSpeech"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/cirlcle"
+                android:backgroundTint="@color/green"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/aiSpeechText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:text="break"
+                android:textAlignment="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <Switch
+        android:id="@+id/showTextOrGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:thumbTint="@color/switch_thumb_color"
+        android:trackTint="@color/gray"
+        android:layout_gravity="right"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:id="@+id/currentInfo"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -142,7 +158,7 @@
     <com.example.carscanner.CustomGraphView
         android:id="@+id/graphView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:gravity="center"
         />
 
